@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/_Scenes/COMP395_Checkout_SIM.unity
+  isLoaded: 1
+  isActive: 1
