@@ -25,7 +25,15 @@ public class Movement : MonoBehaviour {
 	void OnCollisionEnter (Collision collision) {
 		if (collision.gameObject.CompareTag("Counter1")) 
 		{
-			Destroy (gameObject);
+            force = 0.0f;
+            Invoke("Restart", 5.0f);
 		}
 	}
+
+    void Restart()
+    {
+        this.GetComponent<BoxCollider>().enabled = false;
+        force = -20.0f;
+        rb.AddForce(transform.forward * force);
+    }
 }
