@@ -6,12 +6,14 @@ public class Movement : MonoBehaviour {
 
 	public float force;
 	public Rigidbody rb;
+    public int items;
 
 	// Use this for initialization
 	void Start () {
 		
 		rb = GetComponent<Rigidbody> ();
-	}
+        items = Random.Range(1, 12);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -27,7 +29,7 @@ public class Movement : MonoBehaviour {
 		if (collision.gameObject.CompareTag("Counter1")) 
 		{
             force = 0.0f;
-            Invoke("Restart", 5.0f);
+            Invoke("Restart", items);
 		}
         if (collision.gameObject.CompareTag("CustomerDepart"))
         {
