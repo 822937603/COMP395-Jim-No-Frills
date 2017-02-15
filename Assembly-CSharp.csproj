@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CustomerDepart.cs" />
+     <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\SpawnCustomer.cs" />
      <None Include="Assets\ArchivedAssets\COMP395_Cart_ZIP\addde329f56060cd4f1c6d19515842fb\archibase.net.txt" />

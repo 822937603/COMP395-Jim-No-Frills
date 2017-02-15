@@ -33,10 +33,14 @@ public class Movement : MonoBehaviour {
 		}
         if (collision.gameObject.CompareTag("CustomerDepart"))
         {
-            this.GetComponent<BoxCollider>().enabled = false;
+            this.GetComponent<BoxCollider>().enabled = true;
             this.transform.rotation = Quaternion.Euler(1.0f, 0, 0);
             //rb.AddForce(transform.up * force);
         }
+
+		if (collision.gameObject.CompareTag("Death")) {
+			Destroy (this.gameObject);
+		}
 
     }
 
