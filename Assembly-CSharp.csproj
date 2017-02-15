@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CustomerDepart.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\SpawnCustomer.cs" />
      <None Include="Assets\ArchivedAssets\COMP395_Cart_ZIP\addde329f56060cd4f1c6d19515842fb\archibase.net.txt" />
      <None Include="Assets\ArchivedAssets\COMP395_People_ZIP\ManStanding\archibase.net.txt" />
      <None Include="Assets\Art\COMP395_Counter\archibase.net.txt" />
