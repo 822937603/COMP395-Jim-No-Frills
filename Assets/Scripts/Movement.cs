@@ -8,11 +8,15 @@ public class Movement : MonoBehaviour {
 	public Rigidbody rb;
     public int items;
 
+    public bool stopSpawn;
+
 	// Use this for initialization
 	void Start () {
-		
+        stopSpawn = false;
 		rb = GetComponent<Rigidbody> ();
         items = Random.Range(1, 12);
+
+        
     }
 	
 	// Update is called once per frame
@@ -43,7 +47,7 @@ public class Movement : MonoBehaviour {
 		}
 
     }
-
+    
 
     void Restart()
     {
@@ -57,5 +61,5 @@ public class Movement : MonoBehaviour {
     {
         this.GetComponent<BoxCollider>().enabled = true;
     }
-
+                 
 }

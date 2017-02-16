@@ -21,7 +21,7 @@ public class SpawnCustomer : MonoBehaviour {
 		
 	}
 
-	IEnumerator Spawn () {
+	public IEnumerator Spawn () {
 		
 		yield return new WaitForSeconds (delayTime);
 		while (true)
