@@ -6,7 +6,7 @@ public class CustomerDepart : MonoBehaviour {
 
     public GameObject player;
 
-    void OnTriggerEnter(Collider otherGameObject)
+    void OnTriggerStay(Collider otherGameObject)
     {
 
         if (otherGameObject.CompareTag("Player"))

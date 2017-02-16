@@ -31,8 +31,15 @@ public class CeaseSpawn : MonoBehaviour {
     {
                 if (collision.gameObject.CompareTag("CeaseSpawn"))
                 {
+                    //spawnScript.startSpawn = false;
+                    //spawnScript.xDisplace = spawnScript.xDisplace - 20f;
+                    //Debug.Log(spawnScript.xDisplace);
+                    //Debug.Log(spawnScript.location.transform.position.x);
+
+                    //spawnScript.customer.transform.position.Set((spawnScript.customer.transform.position.x - 50f), spawnScript.customer.transform.position.y, spawnScript.customer.transform.position.z);
+                    //Destroy(collision.gameObject.GetComponentInParent<GameObject>().gameObject);
                     stopSpawn = true;
-                    spawnScript.StopAllCoroutines();
+                    //spawnScript.StopAllCoroutines();
                 }
     }
    void OnTriggerExit(Collider collision)
@@ -40,7 +47,10 @@ public class CeaseSpawn : MonoBehaviour {
        if (collision.gameObject.CompareTag("CeaseSpawn"))
        {
            stopSpawn = false;
-           spawnScript.StartCoroutine(spawnScript.Spawn());
+           //spawnScript.startSpawn = true;
+           //spawnScript.xDisplace = 0;
+           //spawnScript.customer.transform.position.Set(spawnScript.customer.transform.position.x, spawnScript.customer.transform.position.y, spawnScript.customer.transform.position.z);
+           //spawnScript.StartCoroutine(spawnScript.Spawn());
        }
    }
 }
