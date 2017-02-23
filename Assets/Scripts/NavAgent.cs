@@ -9,8 +9,9 @@ public class NavAgent : MonoBehaviour {
 	public int items;
 	NavMeshAgent agent;
 	public float speed;
+	public Vector3 destination;
 	public Transform expressCounter;
-
+	public Transform deathTarget;
 	public Transform[] targets;
 
 	public bool stopSpawn;
@@ -23,6 +24,8 @@ public class NavAgent : MonoBehaviour {
 		expressCounter = GameObject.FindGameObjectWithTag ("Express").transform;
 		agent = GetComponent<NavMeshAgent> ();
 		Vector3 speed = GetComponent<NavMeshAgent> ().velocity;
+		deathTarget = GameObject.FindGameObjectWithTag ("Die").transform;
+		destination = agent.destination;
 		targets[0] = GameObject.FindGameObjectWithTag ("Target").transform;
 		targets[1] = GameObject.FindGameObjectWithTag ("Target2").transform;
 		targets[2] = GameObject.FindGameObjectWithTag ("Target3").transform;
@@ -31,13 +34,15 @@ public class NavAgent : MonoBehaviour {
 		targets[5] = GameObject.FindGameObjectWithTag ("Target6").transform;
 		targets[6] = GameObject.FindGameObjectWithTag ("Express").transform;
 		Choose ();
+
+		if (items == 1 || items == 2) {
+			agent.SetDestination (targets[6].position);
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (items == 1 || items == 2) {
-			agent.SetDestination (targets[6].position);
-		}
+		
 	}
 
 	void FixedUpdate() {
@@ -50,12 +55,6 @@ public class NavAgent : MonoBehaviour {
 		{
 			speed = 0.0f;
 			Invoke("Restart", items);
-		}
-		if (collision.gameObject.CompareTag("CustomerDepart"))
-		{
-			this.GetComponent<BoxCollider>().enabled = true;
-			this.transform.rotation = Quaternion.Euler(1.0f, 0, 0);
-			//rb.AddForce(transform.up * force);
 		}
 
 		if (collision.gameObject.CompareTag("Death")) {
@@ -73,9 +72,11 @@ public class NavAgent : MonoBehaviour {
 	void Restart()
 	{
 		this.GetComponent<BoxCollider>().enabled = false;
-		speed = -20.0f;
+		speed = 20.0f;
 		rb.AddForce(transform.forward * speed);
 		Invoke("ColliderRestart", 2.0f);
+		destination = deathTarget.position;
+		agent.destination = destination;
 	}
 
 	void ColliderRestart()
@@ -86,8 +87,8 @@ public class NavAgent : MonoBehaviour {
 	void Choose() {
 		var chooseTarget = Random.Range (0, (targets.Length - 1));
 		agent.updateRotation = false;
-
-		agent.SetDestination (targets[chooseTarget].position);
+		destination = targets [chooseTarget].position;
+		agent.destination = destination;
 	}
 
 }
