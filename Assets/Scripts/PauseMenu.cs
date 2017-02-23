@@ -4,12 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
-
+    public Light light;
     public bool isPaused = false;
     Rect pauseMenu = new Rect(275,100,150,150);
+
+    private AudioSource[] _audioSources;
+    public AudioSource grocerySong;
+    public AudioSource shoppingaCart;
 	// Use this for initialization
 	void Start () {
         //DontDestroyOnLoad(this);
+        light.intensity = 1.75f;
+        this._audioSources = gameObject.GetComponents<AudioSource>();
+        this.grocerySong = this._audioSources[0];
+        this.shoppingaCart = this._audioSources[1];
+
 	}
 	
 	// Update is called once per frame
@@ -20,11 +29,13 @@ public class PauseMenu : MonoBehaviour {
             isPaused = !isPaused;
             if(isPaused)
             {
+                this.shoppingaCart.Stop();
                 Time.timeScale = 0;
                 //DoMyWindow(0);
             }
             else
             {
+                this.shoppingaCart.Play();
                 Time.timeScale = 1;
             }
         }

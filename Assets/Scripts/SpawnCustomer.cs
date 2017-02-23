@@ -30,6 +30,11 @@ public class SpawnCustomer : MonoBehaviour//, IDeselectHandler //This Interface 
     public bool startSpawn;
 
     public Button reset;
+    /*
+    public GameObject[] targets;
+    public GameObject[] counters;
+    public GameObject[] mazes;
+    */
 	// Use this for initialization
 	void Start () {
         startSpawn = true;
@@ -43,7 +48,7 @@ public class SpawnCustomer : MonoBehaviour//, IDeselectHandler //This Interface 
         this.spawnText.text = "Spawn Rate: " + spawnWait;
         this.waveText.text = "Wave Rate: " + waveWait;
         this.custNumText.text = "Customer Count: " + customerCount;
-        this.laneText.text = "Lane " + lane;
+        this.laneText.text = "Lanes: " + lane;
         this.delayText.text = "Delay: " + delayTime;
     }
 
@@ -55,7 +60,7 @@ public class SpawnCustomer : MonoBehaviour//, IDeselectHandler //This Interface 
 			for (int i = 0; i < customerCount; i++) {
 
                 //customer.transform.position.Set(xDisplace, customer.transform.position.y, customer.transform.position.z);
-                Instantiate(customer[lane], location.transform);
+                Instantiate(customer[0], location.transform);
                 //location.transform.position.Set(xDisplace, location.transform.position.y, location.transform.position.z);
                 yield return new WaitForSeconds (spawnWait);
 			}
@@ -64,6 +69,37 @@ public class SpawnCustomer : MonoBehaviour//, IDeselectHandler //This Interface 
 	}
 		
 }
+    /*
+    public IEnumerator ActiveCounters()
+    {
+        targets[3].SetActive(false);
+        targets[4].SetActive(false);
+        targets[5].SetActive(false);
+        targets[6].SetActive(false);
+
+        counters[3].SetActive(false);
+        counters[4].SetActive(false);
+        counters[5].SetActive(false);
+        counters[6].SetActive(false);
+
+        mazes[4].SetActive(false);
+        mazes[5].SetActive(false);
+        mazes[6].SetActive(false);
+        mazes[7].SetActive(false);
+        while (true)
+        {
+            for (int i = 0; i < lane; i++)
+            {
+                targets[i].SetActive(true);
+                counters[i].SetActive(true);
+                mazes[i].SetActive(true);
+                Debug.Log("Counter " + counters[i] + " Active");
+                //customer.transform.position.Set(xDisplace, customer.transform.position.y, customer.transform.position.z);
+                //Instantiate(customer[0], location.transform);
+                //location.transform.position.Set(xDisplace, location.transform.position.y, location.transform.position.z);
+            }
+        }
+    }*/
     /*public void OnDeselect(BaseEventData eventData)
     {
         eventData.selectedObject = spawnRateSlider.gameObject;
@@ -113,10 +149,12 @@ public class SpawnCustomer : MonoBehaviour//, IDeselectHandler //This Interface 
 
     }
     public void laneSliderFunction()
-{
-    lane = (int)laneSlider.value;
-    Debug.Log("Lane " + lane);
-}
+    {
+        lane = (int)laneSlider.value;
+        /*StopCoroutine(ActiveCounters());
+        StartCoroutine(ActiveCounters());*/
+        Debug.Log("Lanes " + lane);
+    }
     public void delaySliderFunction()
     {
         delayTime = delaySlider.value;

@@ -1,0 +1,69 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: NVIDIA Quadro FX 880M (ID=0xa3c)
+    Vendor:   NVIDIA
+    VRAM:     978 MB
+    Driver:   9.18.13.4195
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.245 seconds
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Jason\Documents\Year_2\Sem6\COMP395-Simulation_Design\COMP395-Jim-No-Frills-ca8877745679f6a14486146572aa1f00bc597a3e\COMP395-Jim-No-Frills - Francophone\Builds\Jims No-Frills_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.172464 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1a54 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.930213 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1943.
+Total: 6.290908 ms (FindLiveObjects: 0.107054 ms CreateObjectMapping: 0.057560 ms MarkObjects: 0.408786 ms  DeleteObjects: 5.705775 ms)
+
+Customer Count Changed: 91
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Customer Count Changed: 93
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Customer Count Changed: 96
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Customer Count Changed: 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.094310 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1974.
+Total: 0.776877 ms (FindLiveObjects: 0.165347 ms CreateObjectMapping: 0.060859 ms MarkObjects: 0.537471 ms  DeleteObjects: 0.012465 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.940543 ms
+
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 819.
+Total: 6.077532 ms (FindLiveObjects: 0.072225 ms CreateObjectMapping: 0.061226 ms MarkObjects: 0.368090 ms  DeleteObjects: 5.575257 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.717850 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1974.
+Total: 6.270010 ms (FindLiveObjects: 0.138584 ms CreateObjectMapping: 0.054627 ms MarkObjects: 0.513274 ms  DeleteObjects: 5.562425 ms)
+

@@ -9,15 +9,14 @@ public class Movement : MonoBehaviour {
     public int items;
 
     public bool stopSpawn;
-    public bool stop;
+
 	// Use this for initialization
 	void Start () {
         stopSpawn = false;
 		rb = GetComponent<Rigidbody> ();
         items = Random.Range(1, 12);
 
-        Invoke("Slowdown", 3.0f);
-        Invoke("Speedup", 4.0f);
+        
     }
 	
 	// Update is called once per frame
@@ -31,12 +30,7 @@ public class Movement : MonoBehaviour {
 
 	void OnCollisionEnter (Collision collision) {
 
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
-        }
-        if (collision.gameObject.CompareTag("Counter1")) 
+		if (collision.gameObject.CompareTag("Counter1")) 
 		{
             force = 0.0f;
             Invoke("Restart", items);
@@ -53,33 +47,7 @@ public class Movement : MonoBehaviour {
 		}
 
     }
-
-    public void Slowdown()
-    {
-        force = 15.0f;
-    }
-    public void Speedup()
-    {
-        force = -10.0f;
-    }
-    /*
-    void OnTrggerStay(Collider stopline)
-    {
-        if(stopline.gameObject.CompareTag("StopLine"))
-        {
-            this.force = 0.0f;
-            stop = true;
-        }
-    }
-
-    void OnTrggerExit(Collider stopline)
-    {
-        if (stopline.gameObject.CompareTag("StopLine"))
-        {
-            this.force = -20.0f;
-            stop = false;
-        }
-    }*/
+    
 
     void Restart()
     {
