@@ -74,11 +74,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CeaseSpawn.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\CeaseSpawn.cs" />
     <Compile Include="Assets\Scripts\CustomerDepart.cs" />
     <Compile Include="Assets\Scripts\Death.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\SpawnCustomer.cs" />
+    <Compile Include="Assets\Scripts\StopLine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ArchivedAssets\COMP395_Cart_ZIP\addde329f56060cd4f1c6d19515842fb\archibase.net.txt" />
