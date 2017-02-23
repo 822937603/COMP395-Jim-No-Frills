@@ -50,7 +50,12 @@
      <Compile Include="Assets\Scripts\CustomerDepart.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\NumberOfCustomers1.cs" />
+     <Compile Include="Assets\Scripts\NumberOfCustomers2.cs" />
+=======
      <Compile Include="Assets\Scripts\NavAgent.cs" />
+>>>>>>> origin/master
      <Compile Include="Assets\Scripts\SpawnCustomer.cs" />
      <None Include="Assets\ArchivedAssets\COMP395_Cart_ZIP\addde329f56060cd4f1c6d19515842fb\archibase.net.txt" />
      <None Include="Assets\ArchivedAssets\COMP395_People_ZIP\ManStanding\archibase.net.txt" />
